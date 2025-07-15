@@ -1,0 +1,150 @@
+nav {
+  background-color: #222831bb;
+  border-bottom: 1px solid var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Poppins', sans-serif;
+  height: 80px;
+}
+
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+/* ================= Desktop Menu ================= */
+.menu {
+  width: 35%;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: var(--primary);
+}
+
+/* Garis Hover */
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* ================= Hamburger Button ================= */
+nav > .wrapper > button {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+nav > .wrapper > button > svg {
+  color: #fff;
+  font-size: 40px;
+}
+
+/* ================= Responsive ================= */
+@media only screen and (max-width: 1000px) {
+  .menu {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 70%;
+    height: calc(100% - 80px);
+    background-color: #fff;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  .menu.tampil {
+    right: 0;
+  }
+
+  .menu > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .menu > ul > li {
+    width: 100%;
+  }
+
+  .menu > ul > li > a {
+    width: 100%;
+    color: #000;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .menu > ul > li > a::after {
+    background-color: var(--primary);
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .menu > ul > li > a:hover::after {
+    transform: scaleX(1);
+  }
+
+  nav > .wrapper > button {
+    display: block;
+  }
+
+  .logo > a {
+    margin-left: 0;
+  }
+}
