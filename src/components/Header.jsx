@@ -12,9 +12,9 @@ function header() {
             <h3>Muhammad Aldri</h3>
             <p>Mahasiswa</p>
             <div className='socialMedia'>
-                <a href=""><GrInstagram /></a>
-                <a href=""><ImWhatsapp /></a>
-                <a href=""><FaFacebook /></a>
+                <a href="https://www.instagram.com/aldrisptra" target="_blank" rel="noopener noreferrer"><GrInstagram /></a>
+                <a href="https://wa.me//085246316364" target="_blank" rel="noopener noreferrer"><ImWhatsapp /></a>
+                <a href="https://www.facebook.com/mhmmd.a.sptra.9" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             </div>
         </div>
     </header>
