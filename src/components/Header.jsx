@@ -8,7 +8,7 @@ function header() {
   return (
     <header id='header'>
         <div className='header-jumbotron'>
-            <img src={profilePicture} />
+          <img src={profilePicture} />
             <h3>Muhammad Aldri</h3>
             <p>Mahasiswa</p>
             <div className='socialMedia'>
