@@ -1,0 +1,161 @@
+#about {
+  background-color: var(--bg);
+  position: relative;
+  font-size: 1.2rem;
+  padding: 4rem 0;
+}
+#about > .wrapper {
+  margin: auto;
+  width: 50%;
+}
+#about > .wrapper > h3 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 0px 0px 30px 0px;
+  padding: 0px;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.about-title {
+  background: linear-gradient(
+    270deg,
+    var(--primary),
+    #49b7ea
+  );
+  
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ #about p {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#about > .wrapper > p {
+  text-align: center;
+  color: #fff;
+}
+
+/* Animasi muncul dari bawah */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi menghilang ke bawah */
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Muncul saat masuk ke layar */
+.fade-in-text {
+  animation: fadeInUp 1s ease forwards, animatedGradient 5s ease infinite;
+}
+
+/* Menghilang saat keluar dari layar */
+.fade-out-text {
+  animation: fadeOutDown 1s ease forwards;
+}
+
+#about > .wrapper > h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  color: #333;
+}
+.skills {
+  text-align: center;
+}
+.skills > svg {
+  display: inline-block;
+  color: #74797e;
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.skills > svg:hover {
+  color: #925650;
+}
+
+@media only screen and (max-width: 1000px) {
+  #about > .wrapper {
+    width: 80%;
+  }
+  #about > .wrapper > h3 {
+    font-size: 2.2rem;
+  }
+
+  #about > .wrapper > p {
+    font-size: 1rem;
+  }
+}
+
+/* HP */
+@media only screen and (max-width: 600px) {
+  #about {
+    padding: 3rem 1rem;
+  }
+
+  #about > .wrapper {
+    width: 100%;
+  }
+
+  #about > .wrapper > h3 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+  }
+
+  #about > .wrapper > p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .skills > svg {
+    width: 40px;
+  }
+}

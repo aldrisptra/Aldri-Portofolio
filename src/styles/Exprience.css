@@ -1,0 +1,108 @@
+#exprience {
+  background-color: var(--bg);
+  position: relative;
+  font-size: 1.2rem;
+  padding: 4rem 1rem; /* ✅ beri ruang atas bawah & responsif */
+}
+
+#exprience > .wrapper {
+  margin: auto;
+  width: 50%;
+  max-width: 900px;
+}
+
+/* Judul */
+#exprience > .wrapper > h3 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.exprience-title {
+  background: linear-gradient(
+  270deg,
+  var(--primary),
+  #49b7ea
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Paragraf */
+#exprience > .wrapper > p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Subjudul opsional */
+#exprience > .wrapper > h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+/* Icon skill jika digunakan */
+.skills {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.skills > svg {
+  display: inline-block;
+  color: #74797e;
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills > svg:hover {
+  color: #aa392d;
+  transform: scale(1.2);
+}
+
+/* ✅ Responsif */
+@media only screen and (max-width: 1000px) {
+  #exprience > .wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #exprience > .wrapper {
+    width: 95%;
+  }
+
+  #exprience > .wrapper > h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  #exprience > .wrapper > p {
+    font-size: 1rem;
+  }
+}
