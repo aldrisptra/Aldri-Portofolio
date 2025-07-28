@@ -2,13 +2,13 @@
   background-color: var(--bg);
   position: relative;
   font-size: 1.2rem;
-  padding: 4rem 1rem; /* ✅ beri ruang atas bawah & responsif */
+  padding: 4rem 1rem; /* beri ruang atas bawah & responsif */
 }
 
 #exprience > .wrapper {
   margin: auto;
-  width: 50%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* Judul */
@@ -46,12 +46,53 @@
   }
 }
 
+.content-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.infinitevol3-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 /* Paragraf */
-#exprience > .wrapper > p {
-  text-align: center;
+.text-content {
+  flex: 1;
+  text-align: left;
   color: #fff;
+  margin-top: 0px;
   margin-bottom: 1rem;
   line-height: 1.7;
+}
+
+.text-content h2,
+.text-content p,
+.text-content ul,
+.text-content li {
+  margin: 0;
+  padding: 0;
+}
+
+.text-content p {
+  line-height: 1.7rem
+}
+
+
+.text-content h2 {
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: -5px;
+}
+
+.text-content ul {
+  padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+  margin-top: 2px;     /* opsional untuk jarak atas */
 }
 
 /* Subjudul opsional */
@@ -85,11 +126,26 @@
   transform: scale(1.2);
 }
 
-/* ✅ Responsif */
+/* Responsif */
 @media only screen and (max-width: 1000px) {
   #exprience > .wrapper {
     width: 80%;
   }
+    .content-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 0rem;
+  }
+}
+
+.text-content ul {
+  padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+  /* margin-top: 2px;   opsional untuk jarak atas */
 }
 
 @media only screen and (max-width: 600px) {
@@ -104,5 +160,11 @@
 
   #exprience > .wrapper > p {
     font-size: 1rem;
+  }
+  
+  .text-content {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 1rem;
   }
 }
