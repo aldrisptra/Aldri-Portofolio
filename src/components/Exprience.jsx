@@ -3,6 +3,8 @@ import infinitevol3 from '../assets/infinitevol3.jpg';
 import wp24 from '../assets/wp24.jpg';
 import hutkm from '../assets/hutkm.jpg';
 import infinitevol4 from '../assets/infinitevol4.jpeg';
+import stafmagang from '../assets/stafmagang.jpg';
+import stafhmif from '../assets/stafhmif.jpeg';
 import { BiAward } from 'react-icons/bi';
 
 function Exprience() {
@@ -28,7 +30,7 @@ function Exprience() {
 </div>
 
           <div className='text-content-infinitevol3'>
-            <h2>Infinite Vol. 3 - Staf Divisi Lomba</h2>
+            <h2>Infinite Vol.3 - Staf Divisi Lomba</h2>
             <p>Tanggung jawab saya mencakup:</p>
             <ul>
               <li>Menyusun konsep teknis dan alur lomba.</li>
@@ -106,7 +108,59 @@ function Exprience() {
 </div>
 
           <div className='text-content-infinitevol4'>
-            <h2>Welcome Party Informatika 2024 - Koor Divisi Lomba</h2>
+            <h2>Infinite Vol.4 - Koor Divisi Lomba</h2>
+            <p>Tanggung jawab saya mencakup:</p>
+            <ul>
+              <li>Membagi dan mengoordinasikan tugas kepada staf.</li>
+              <li>Mengawasi progres kerja tim dan memberikan arahan sesuai kebutuhan Lomba.</li>
+              <li>Mengawasi pelaksanaan lomba dan evaluasi pasca kegiatan.</li>
+            </ul>
+          </div>
+        </div>
+
+{/* -------------------------------STAF Magang----------------------- */}
+        <div className='content-flex-maganghmif'>
+          <div className='image-container-maganghmif'>
+  <img src={stafmagang} alt="Pengalaman saya" className='maganghmif-image' />
+  <a
+    href="https://drive.google.com/file/d/1UFsBH8ligFTYAjwXsiOU4Usq5naergFu/view?usp=sharing"
+    rel='noopener noreferrer'
+    className='sertifikat-badge-maganghmif'
+    title='Lihat Sertifikat'
+  >
+    <BiAward />
+    <span>Lihat Sertifikat</span>
+    </a>
+</div>
+
+          <div className='text-content-maganghmif'>
+            <h2>Infinite Vol.4 - Koor Divisi Lomba</h2>
+            <p>Tanggung jawab saya mencakup:</p>
+            <ul>
+              <li>Membagi dan mengoordinasikan tugas kepada staf.</li>
+              <li>Mengawasi progres kerja tim dan memberikan arahan sesuai kebutuhan Lomba.</li>
+              <li>Mengawasi pelaksanaan lomba dan evaluasi pasca kegiatan.</li>
+            </ul>
+          </div>
+        </div>
+
+{/* -------------------------------STAF hmif----------------------- */}
+        <div className='content-flex-stafhmif'>
+          <div className='image-container-stafhmif'>
+  <img src={stafhmif} alt="Pengalaman saya" className='stafhmif-image' />
+  <a
+    href="https://drive.google.com/file/d/1UFsBH8ligFTYAjwXsiOU4Usq5naergFu/view?usp=sharing"
+    rel='noopener noreferrer'
+    className='sertifikat-badge-stafhmif'
+    title='Lihat Sertifikat'
+  >
+    <BiAward />
+    <span>Lihat Sertifikat</span>
+    </a>
+</div>
+
+          <div className='text-content-stafhmif'>
+            <h2>Himpunan Mahasiswa Informatika - Staf Departemen Dalam Negri</h2>
             <p>Tanggung jawab saya mencakup:</p>
             <ul>
               <li>Membagi dan mengoordinasikan tugas kepada staf.</li>
