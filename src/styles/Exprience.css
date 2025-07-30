@@ -34,12 +34,25 @@
   animation: gradientMove 6s ease infinite;
 }
 
-.image-container {
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ------------------infinitevol3------------------ */
+.image-container-infinitevol3 {
   position: relative;
   display: inline-block;
 }
 
-.sertifikat-badge {
+.sertifikat-badge-infinitevol3 {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -58,34 +71,22 @@
   z-index: 2;
 }
 
-.sertifikat-badge svg {
+.sertifikat-badge-infinitevol3 svg {
   width: 18px;
   height: 18px;
 }
 
-.sertifikat-badge:hover {
+.sertifikat-badge-infinitevol3:hover {
   background-color: var(--primary);
   color: #fff;
 }
 
-.sertifikat-badge:hover svg {
+.sertifikat-badge-infinitevol3:hover svg {
   color: #fff;
 }
 
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.content-flex {
+/* ----------------infinitevol3--------------- */
+.content-flex-infinitevol3 {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -101,7 +102,8 @@
 }
 
 /* Paragraf */
-.text-content {
+/* -------------------------infinitevol3--------------- */
+.text-content-infinitevol3 {
   flex: 1;
   text-align: left;
   color: #fff;
@@ -110,26 +112,296 @@
   line-height: 1.7;
 }
 
-.text-content h2,
-.text-content p,
-.text-content ul,
-.text-content li {
+.text-content-infinitevol3 h2,
+.text-content-infinitevol3 p,
+.text-content-infinitevol3 ul,
+.text-content-infinitevol3 li {
   margin: 0;
   padding: 0;
 }
 
-.text-content p {
+.text-content-infinitevol3 p {
   line-height: 1.7rem
 }
 
 
-.text-content h2 {
+.text-content-infinitevol3 h2 {
   font-weight: bold;
   color: var(--primary);
   margin-top: -5px;
 }
 
-.text-content ul {
+.text-content-infinitevol3 ul {
+  padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+  margin-top: 2px;     /* opsional untuk jarak atas */
+}
+
+/* ---------------------wp24------------------ */
+.image-container-wp24 {
+  position: relative;
+  display: inline-block;
+}
+
+.sertifikat-badge-wp24 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.sertifikat-badge-wp24 svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sertifikat-badge-wp24:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.sertifikat-badge-wp24:hover svg {
+  color: #fff;
+}
+
+/* --------------------wp24------------------ */
+.content-flex-wp24 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.wp24-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Paragraf */
+/* ------------------------wp24---------------------- */
+.text-content-wp24 {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.text-content-wp24 h2,
+.text-content-wp24 p,
+.text-content-wp24 ul,
+.text-content-wp24 li {
+  margin: 0;
+  padding: 0;
+}
+
+.text-content-wp24 p {
+  line-height: 1.7rem
+}
+
+
+.text-content-wp24 h2 {
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: -5px;
+}
+
+.text-content-wp24 ul {
+  padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+  margin-top: 2px;     /* opsional untuk jarak atas */
+}
+
+/* ---------------------hutkm------------------ */
+.image-container-hutkm {
+  position: relative;
+  display: inline-block;
+}
+
+.sertifikat-badge-hutkm {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.sertifikat-badge-hutkm svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sertifikat-badge-hutkm:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.sertifikat-badge-hutkm:hover svg {
+  color: #fff;
+}
+
+/* --------------------hutkm------------------ */
+.content-flex-hutkm {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hutkm-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Paragraf */
+/* ------------------------hutkm---------------------- */
+.text-content-hutkm {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.text-content-hutkm h2,
+.text-content-hutkm p,
+.text-content-hutkm ul,
+.text-content-hutkm li {
+  margin: 0;
+  padding: 0;
+}
+
+.text-content-hutkm p {
+  line-height: 1.7rem
+}
+
+
+.text-content-hutkm h2 {
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: -5px;
+}
+
+.text-content-hutkm ul {
+  padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+  margin-top: 2px;     /* opsional untuk jarak atas */
+}
+
+/* ---------------------infinitevol4------------------ */
+.image-container-infinitevol4 {
+  position: relative;
+  display: inline-block;
+}
+
+.sertifikat-badge-infinitevol4 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.sertifikat-badge-infinitevol4 svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sertifikat-badge-infinitevol4:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.sertifikat-badge-infinitevol4:hover svg {
+  color: #fff;
+}
+
+/* --------------------infinitevol4------------------ */
+.content-flex-infinitevol4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.infinitevol4-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Paragraf */
+/* ------------------------infinitevol4---------------------- */
+.text-content-infinitevol4 {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.text-content-infinitevol4 h2,
+.text-content-infinitevol4 p,
+.text-content-infinitevol4 ul,
+.text-content-infinitevol4 li {
+  margin: 0;
+  padding: 0;
+}
+
+.text-content-infinitevol4 p {
+  line-height: 1.7rem
+}
+
+
+.text-content-infinitevol4 h2 {
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: -5px;
+}
+
+.text-content-infinitevol4 ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
   margin-top: 2px;     /* opsional untuk jarak atas */
 }
@@ -170,21 +442,74 @@
   #exprience > .wrapper {
     width: 80%;
   }
-    .content-flex {
+
+  /* --------------------infinitevol3--------------- */
+    .content-flex-infinitevol3 {
     flex-direction: column;
     align-items: center;
   }
 
-  .text-content {
+  .text-content-infinitevol3 {
     margin-top: 1rem;
     text-align: left;
     margin: 0 0rem;
   }
-}
 
-.text-content ul {
+  .text-content-infinitevol3 ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
   /* margin-top: 2px;   opsional untuk jarak atas */
+}
+
+/* ------------------------wp24--------------------------- */
+    .content-flex-wp24 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content-wp24 {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 0rem;
+  }
+  
+  .text-content-wp24 ul {
+    padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+    /* margin-top: 2px;   opsional untuk jarak atas */
+  }
+
+/* ------------------------hutkm--------------------------- */
+    .content-flex-hutkm {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content-hutkm {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 0rem;
+  }
+  
+  .text-content-hutkm ul {
+    padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+    /* margin-top: 2px;   opsional untuk jarak atas */
+  }
+
+/* ------------------------infinitevol4--------------------------- */
+    .content-flex-infinitevol4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content-infinitevol4 {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 0rem;
+  }
+  
+  .text-content-infinitevol4 ul {
+    padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+    /* margin-top: 2px;   opsional untuk jarak atas */
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -200,8 +525,29 @@
   #exprience > .wrapper > p {
     font-size: 1rem;
   }
-  
-  .text-content {
+  /* --------------------infnitevol3----------------- */
+  .text-content-infinitevol3 {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 1rem;
+  }
+
+/* -----------------------wp24--------------------- */
+  .text-content-wp24 {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 1rem;
+  }
+
+/* -----------------------hutkm--------------------- */
+  .text-content-hutkm {
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0 1rem;
+  }
+
+/* -----------------------infinitevol4--------------------- */
+  .text-content-infinitevol4 {
     margin-top: 1rem;
     text-align: left;
     margin: 0 1rem;
