@@ -101,25 +101,72 @@
   text-align: center;
   font-size: 1.4rem;
   margin: 0px 0px 20px 0px;
+  margin-top: 80px;
   padding: 0px;
   font-family: "Kanit", sans-serif;
   letter-spacing: 5px;
-  color: #333;
+  color: var(--primary);
 }
-.skills {
+#about > .wrapper .skills {
   text-align: center;
 }
-.skills > svg {
+#about .wrapper .skills > svg {
   display: inline-block;
-  color: #74797e;
-  width: 50px;
+  border-radius: 5px;
+  width: 60px;
   height: auto;
   margin: 10px;
   cursor: pointer;
 }
 
-.skills > svg:hover {
-  color: #925650;
+.skills .html {
+  color: #ff7300;
+}
+.skills .react {
+  color: #00ffd9;
+}
+.skills .js {
+  color: #e1ff00;
+}
+.skills .vscode {
+  color: #0084ff;
+}
+.skills .tailwind {
+  color: rgb(64, 182, 203);
+}
+.skills .github {
+  color: black;
+}
+.skills .java {
+  color: rgb(30, 30, 189);
+}
+.skills .python {
+  color: rgb(224, 220, 12);
+}
+
+.skills .html:hover {
+  color: #ff7300;
+}
+.skills .react:hover {
+  color: #00ffd9;
+}
+.skills .js:hover {
+  color: #e1ff00;
+}
+.skills .vscode:hover {
+  color: #0084ff;
+}
+.skills .tailwind:hover {
+  color: rgb(64, 182, 203);
+}
+.skills .github:hover {
+  color: black;
+}
+.skills .java:hover {
+  color: rgb(30, 30, 189);
+}
+.skills .python:hover {
+  color: rgb(224, 220, 12);
 }
 
 @media only screen and (max-width: 1000px) {

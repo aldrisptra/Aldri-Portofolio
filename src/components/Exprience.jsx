@@ -6,6 +6,8 @@ import infinitevol4 from '../assets/infinitevol4.jpeg';
 import stafmagang from '../assets/stafmagang.jpg';
 import stafhmif from '../assets/stafhmif.jpeg';
 import { BiAward } from 'react-icons/bi';
+import { FaAward } from "react-icons/fa";
+
 
 function Exprience() {
   return (
@@ -24,7 +26,7 @@ function Exprience() {
     className='sertifikat-badge-infinitevol3'
     title='Lihat Sertifikat'
   >
-    <BiAward />
+    <FaAward />
     <span>Lihat Sertifikat</span>
     </a>
 </div>
@@ -51,7 +53,7 @@ function Exprience() {
     className='sertifikat-badge-wp24'
     title='Lihat Sertifikat'
   >
-    <BiAward />
+    <FaAward />
     <span>Lihat Sertifikat</span>
     </a>
 </div>
@@ -76,7 +78,7 @@ function Exprience() {
     className='sertifikat-badge-hutkm'
     title='Lihat Sertifikat'
   >
-    <BiAward />
+    <FaAward />
     <span>Lihat Sertifikat</span>
     </a>
 </div>
@@ -102,7 +104,7 @@ function Exprience() {
     className='sertifikat-badge-infinitevol4'
     title='Lihat Sertifikat'
   >
-    <BiAward />
+    <FaAward />
     <span>Lihat Sertifikat</span>
     </a>
 </div>
@@ -128,7 +130,7 @@ function Exprience() {
     className='sertifikat-badge-maganghmif'
     title='Lihat Sertifikat'
   >
-    <BiAward />
+    <FaAward />
     <span>Lihat Sertifikat</span>
     </a>
 </div>
@@ -154,7 +156,7 @@ function Exprience() {
     className='sertifikat-badge-stafhmif'
     title='Lihat Sertifikat'
   >
-    <BiAward />
+    <FaAward />
     <span>Lihat Sertifikat</span>
     </a>
 </div>
