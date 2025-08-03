@@ -48,7 +48,7 @@ function Navbar() {
           <ul>
             <li><a href="#header" onClick={() => setMenuActive(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setMenuActive(false)}>Tentang</a></li>
-            <li><a href="#portofolio" onClick={() => setMenuActive(false)}>Projek</a></li>
+            <li><a href="#portofolio" onClick={() => setMenuActive(false)}>Proyek</a></li>
             <li><a href="#exprience" onClick={() => setMenuActive(false)}>Pengalaman</a></li>
           </ul>
         </div>

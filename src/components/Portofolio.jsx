@@ -4,7 +4,7 @@ function Portofolio() {
   return (
    <section id="portofolio">
     <div className="wrapper">
-        <h3 className='portofolio-title'>Portofolio</h3>
+        <h3 className='portofolio-title'>Proyek</h3>
         <div className="grid">
             {
                 portofolioList.map((item)=>{

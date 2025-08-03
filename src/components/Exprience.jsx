@@ -136,7 +136,7 @@ function Exprience() {
 </div>
 
           <div className='text-content-maganghmif'>
-            <h2>Infinite Vol.4 - Koor Divisi Lomba</h2>
+            <h2>Himpunan Mahasiswa Informatika - Staf Magang Departemen Dalam Negri</h2>
             <p>Tanggung jawab saya mencakup:</p>
             <ul>
               <li>Membagi dan mengoordinasikan tugas kepada staf.</li>

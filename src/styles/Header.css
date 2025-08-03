@@ -75,37 +75,42 @@ header {
   color: #fff;
   font-size: 1.2rem;
 }
-.socialMedia {
-  color: #fff;
+.action-buttons {
+  margin-top: 0.5rem;
   display: flex;
-  gap: 20px;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.socialMedia > a {
-  background-color: #222831;
+.btnkontak {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
   color: #fff;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
   width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.socialMedia > a > svg {
-  height: 30px;
-  width: auto;
-}
-.socialMedia > a:hover {
+
+.btnkontak:hover {
   background-color: var(--primary);
 }
-
-.socialMedia > a:active {
-  transform: scale(0.50); /* sedikit mengecil saat ditekan */
+.btncv {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 80px;
 }
 
-.socialMedia > a,
-.socialMedia > a > svg {
-  transition: all 0.5s ease;
+.btncv:hover {
+  background-color: var(--primary);
 }
 
 @media only screen and (max-width: 1000px) {

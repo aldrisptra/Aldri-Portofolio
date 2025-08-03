@@ -3,6 +3,8 @@ import Header from "../components/header"
 import Portofolio from "../components/Portofolio"
 import About from "../components/About"
 import Exprience from "../components/Exprience"
+import Footer from "../components/Footer"
+
 function Home() {
     return (
         <>
@@ -11,6 +13,7 @@ function Home() {
             <About />
             <Portofolio />
             <Exprience />
+            <Footer />
 
         </>
   )

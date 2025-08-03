@@ -36,7 +36,7 @@ function About() {
           ref={pRef}
           className={visible ? "fade-in-text" : "fade-out-text"}
         >
-         Halo! Saya Muhammad Aldri, mahasiswa Informatika yang memiliki semangat tinggi dalam belajar dan berkarya di dunia teknologi. Fokus utama saya adalah pada pengembangan frontend menggunakan React JS dan Tailwind CSS. Saya senang mempelajari cara membuat antarmuka yang menarik, responsif, dan interaktif. Saya telah menyelesaikan beberapa proyek pribadi, seperti website portofolio ini, dan aktif mengikuti kegiatan kampus seperti organisasi dan beberapa kepanitiaan. Saya selalu terbuka untuk belajar hal baru dan saat ini sedang mencari pengalaman kerja magang atau proyek kolaboratif yang bisa menambah wawasan serta keterampilan saya.
+         Halo! Saya Muhammad Aldri Saputra, mahasiswa Program Studi Informatika di Institut Teknologi Kalimantan. Saya memiliki semangat tinggi dalam belajar dan berkarya di bidang teknologi, terutama dalam pengembangan antarmuka pengguna (front-end). Fokus utama saya adalah membangun tampilan web yang menarik, responsif, dan interaktif menggunakan React.js dan Tailwind CSS sebagai teknologi utama. Sebelum menempuh pendidikan di perguruan tinggi, saya belajar di SMKN 1 Balikpapan, jurusan Teknik Komputer dan Jaringan (TKJ), yang menjadi dasar kuat bagi ketertarikan saya terhadap dunia IT dan pengembangan web. Saya telah mengerjakan beberapa proyek pribadi, seperti website portofolio ini, sebagai wadah eksplorasi kemampuan saya. Di luar akademik, saya aktif dalam organisasi dan berbagai kepanitiaan kampus, yang membantu saya mengasah soft skill dan kemampuan bekerja dalam tim.
         </p>
         <h4>Progamming Languenge & Tools</h4>
         <div className="skills">
