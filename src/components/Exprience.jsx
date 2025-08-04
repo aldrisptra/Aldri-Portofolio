@@ -6,10 +6,39 @@ import infinitevol4 from "../assets/infinitevol4.jpeg";
 import stafmagang from "../assets/stafmagang.jpg";
 import stafhmif from "../assets/stafhmif.jpeg";
 import { FaAward } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 
 function Exprience() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-up");
+            entry.target.classList.remove("fade-out-down");
+          } else {
+            entry.target.classList.remove("fade-in-up");
+            entry.target.classList.add("fade-out-down");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const targets = sectionRef.current.querySelectorAll(
+      ".content-flex-infinitevol3, .content-flex-wp24, .content-flex-hutkm, .content-flex-infinitevol4, .content-flex-maganghmif, .content-flex-stafhmif"
+    );
+
+    targets.forEach((el) => observer.observe(el));
+
+    return () => {
+      targets.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
   return (
-    <section id="exprience">
+    <section id="exprience" ref={sectionRef}>
       <div className="wrapper">
         <h3 className="exprience-title">Pengalaman</h3>
 
@@ -179,12 +208,15 @@ function Exprience() {
             </h2>
             <p>Tanggung jawab saya mencakup:</p>
             <ul>
-              <li>Membagi dan mengoordinasikan tugas kepada staf.</li>
               <li>
-                Mengawasi progres kerja tim dan memberikan arahan sesuai
-                kebutuhan Lomba.
+                Menjadi panitia kegiatan yang bertujuan menciptakan keselarasan,
+                kekeluargaan dan kebersamaan antar seluruh anggota HMIF ITK.
               </li>
-              <li>Mengawasi pelaksanaan lomba dan evaluasi pasca kegiatan.</li>
+              <li>
+                Menjadi panitia dalam kegiatan yang Memfasilitasi penyelenggaran
+                forum pengambilan keputusan dan pengumpulan aspirasi dari
+                seluruh anggota HMIF ITK.
+              </li>
             </ul>
           </div>
         </div>
@@ -214,12 +246,19 @@ function Exprience() {
             </h2>
             <p>Tanggung jawab saya mencakup:</p>
             <ul>
-              <li>Membagi dan mengoordinasikan tugas kepada staf.</li>
               <li>
-                Mengawasi progres kerja tim dan memberikan arahan sesuai
-                kebutuhan Lomba.
+                Bertanggung jawab dalam merancang dan melaksanakan program kerja
+                yang mendukung tujuan departemen, khususnya dalam membangun
+                kebersamaan dan kekeluargaan antaranggota HMIF ITK.
               </li>
-              <li>Mengawasi pelaksanaan lomba dan evaluasi pasca kegiatan.</li>
+              <li>
+                Menginisiasi dan mengembangkan ide kegiatan internal, seperti
+                forum diskusi, internal bonding, dan kegiatan rekreatif.
+              </li>
+              <li>
+                Membimbing dan mengarahkan staf magang dalam menjalankan
+                tugasnya.
+              </li>
             </ul>
           </div>
         </div>

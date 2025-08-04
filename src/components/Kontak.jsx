@@ -1,10 +1,31 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "../styles/Kontak.css";
 
 function Kontak() {
   const form = useRef();
+  const sectionRef = useRef(null);
   const [errors, setErrors] = useState({});
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,7 +40,6 @@ function Kontak() {
     if (!message) newErrors.message = "Pesan tidak boleh kosong.";
 
     setErrors(newErrors);
-
     if (Object.keys(newErrors).length > 0) return;
 
     emailjs
@@ -30,21 +50,23 @@ function Kontak() {
         "aXkzoUWl7b34QO_MS"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           alert("Pesan berhasil dikirim!");
           form.current.reset();
         },
-        (error) => {
-          console.error(error.text);
+        () => {
           alert("Terjadi kesalahan, coba lagi.");
         }
       );
   };
 
   return (
-    <section id="kontak" className="kontak">
-      <div className="wrapper">
+    <section
+      id="kontak"
+      ref={sectionRef}
+      className={`kontak ${isVisible ? "fade-in-text" : "fade-out-text"}`}
+    >
+      <div className="wrapper" ref={sectionRef}>
         <h3 className="kontak-title">Kontak</h3>
         <p className="subjudul">Hubungi saya di sini</p>
         <form ref={form} onSubmit={sendEmail} className="kontak-form">
@@ -62,7 +84,6 @@ function Kontak() {
             />
             <textarea name="message" rows="6" placeholder="Pesan kamu..." />
             {errors.message && <p className="error-msg">{errors.message}</p>}
-
             <button type="submit">Kirim Pesan</button>
           </div>
         </form>

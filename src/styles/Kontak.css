@@ -90,9 +90,54 @@
     background-position: 0% 50%;
   }
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+.fade-in-text {
+  opacity: 1;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-out-text {
+  opacity: 0;
+  animation: fadeOutDown 0.8s ease forwards;
+}
 
 .kontak .wrapper .subjudul {
   color: var(--primary);
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #kontak > .wrapper {
+    width: 80%;
+  }
+  #kontak > .wrapper > h3 {
+    font-size: 2.2rem;
+  }
+
+  #kontak > .wrapper > p {
+    font-size: 1.2rem;
+  }
 }

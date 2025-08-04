@@ -113,8 +113,11 @@ header {
 }
 
 @media only screen and (max-width: 1000px) {
+  #header > .wrapper {
+    width: 80%;
+  }
   .header-jumbotron > h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 3rem;
   }
 
