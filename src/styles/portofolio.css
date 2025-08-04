@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   justify-items: center;
   margin-top: 2rem;
@@ -14,7 +14,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid> .item > a > img:hover {
+.grid > .item > a > img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 15px rgb(0, 0, 0, 0.2);
 }
@@ -30,11 +30,7 @@
 }
 
 .portofolio-title {
-  background: linear-gradient(
-  270deg,
-  var(--primary),
-  #49b7ea
-  );
+  background: linear-gradient(270deg, var(--primary), #49b7ea);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

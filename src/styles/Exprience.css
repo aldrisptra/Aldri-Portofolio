@@ -2,7 +2,7 @@
   background-color: var(--bg);
   position: relative;
   font-size: 1.2rem;
-  padding: 4rem 1rem; /* beri ruang atas bawah & responsif */
+  padding: 4rem 1rem;
 }
 
 #exprience > .wrapper {
@@ -23,11 +23,7 @@
 }
 
 .exprience-title {
-  background: linear-gradient(
-  270deg,
-  var(--primary),
-  #49b7ea
-  );
+  background: linear-gradient(270deg, var(--primary), #49b7ea);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,7 +62,7 @@
   color: var(--primary);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -98,7 +94,7 @@
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraf */
@@ -121,9 +117,8 @@
 }
 
 .text-content-infinitevol3 p {
-  line-height: 1.7rem
+  line-height: 1.7rem;
 }
-
 
 .text-content-infinitevol3 h2 {
   font-weight: bold;
@@ -134,7 +129,7 @@
 
 .text-content-infinitevol3 ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  margin-top: 2px;     /* opsional untuk jarak atas */
+  margin-top: 2px; /* opsional untuk jarak atas */
 }
 
 /* ---------------------wp24------------------ */
@@ -157,7 +152,7 @@
   color: var(--primary);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -189,7 +184,7 @@
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraf */
@@ -212,9 +207,8 @@
 }
 
 .text-content-wp24 p {
-  line-height: 1.7rem
+  line-height: 1.7rem;
 }
-
 
 .text-content-wp24 h2 {
   font-weight: bold;
@@ -225,7 +219,7 @@
 
 .text-content-wp24 ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  margin-top: 2px;     /* opsional untuk jarak atas */
+  margin-top: 2px; /* opsional untuk jarak atas */
 }
 
 /* ---------------------hutkm------------------ */
@@ -248,7 +242,7 @@
   color: var(--primary);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -280,7 +274,7 @@
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraf */
@@ -303,9 +297,8 @@
 }
 
 .text-content-hutkm p {
-  line-height: 1.7rem
+  line-height: 1.7rem;
 }
-
 
 .text-content-hutkm h2 {
   font-weight: bold;
@@ -316,7 +309,7 @@
 
 .text-content-hutkm ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  margin-top: 2px;     /* opsional untuk jarak atas */
+  margin-top: 2px; /* opsional untuk jarak atas */
 }
 
 /* ---------------------infinitevol4------------------ */
@@ -339,7 +332,7 @@
   color: var(--primary);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -371,7 +364,7 @@
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraf */
@@ -394,9 +387,8 @@
 }
 
 .text-content-infinitevol4 p {
-  line-height: 1.7rem
+  line-height: 1.7rem;
 }
-
 
 .text-content-infinitevol4 h2 {
   font-weight: bold;
@@ -407,7 +399,7 @@
 
 .text-content-infinitevol4 ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  margin-top: 2px;     /* opsional untuk jarak atas */
+  margin-top: 2px; /* opsional untuk jarak atas */
 }
 
 /* ---------------------maganghmif------------------ */
@@ -430,7 +422,7 @@
   color: var(--primary);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -462,7 +454,7 @@
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraf */
@@ -485,9 +477,8 @@
 }
 
 .text-content-maganghmif p {
-  line-height: 1.7rem
+  line-height: 1.7rem;
 }
-
 
 .text-content-maganghmif h2 {
   font-weight: bold;
@@ -498,7 +489,7 @@
 
 .text-content-maganghmif ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  margin-top: 2px;     /* opsional untuk jarak atas */
+  margin-top: 2px; /* opsional untuk jarak atas */
 }
 
 /* ---------------------stafhmif------------------ */
@@ -521,7 +512,7 @@
   color: var(--primary);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -553,7 +544,7 @@
   max-width: 500px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraf */
@@ -576,9 +567,8 @@
 }
 
 .text-content-stafhmif p {
-  line-height: 1.7rem
+  line-height: 1.7rem;
 }
-
 
 .text-content-stafhmif h2 {
   font-weight: bold;
@@ -589,7 +579,7 @@
 
 .text-content-stafhmif ul {
   padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  margin-top: 2px;     /* opsional untuk jarak atas */
+  margin-top: 2px; /* opsional untuk jarak atas */
 }
 
 /* Subjudul opsional */
@@ -630,7 +620,7 @@
   }
 
   /* --------------------infinitevol3--------------- */
-    .content-flex-infinitevol3 {
+  .content-flex-infinitevol3 {
     flex-direction: column;
     align-items: center;
   }
@@ -642,12 +632,12 @@
   }
 
   .text-content-infinitevol3 ul {
-  padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
-  /* margin-top: 2px;   opsional untuk jarak atas */
-}
+    padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
+    /* margin-top: 2px;   opsional untuk jarak atas */
+  }
 
-/* ------------------------wp24--------------------------- */
-    .content-flex-wp24 {
+  /* ------------------------wp24--------------------------- */
+  .content-flex-wp24 {
     flex-direction: column;
     align-items: center;
   }
@@ -657,13 +647,13 @@
     text-align: left;
     margin: 0 0rem;
   }
-  
+
   .text-content-wp24 ul {
     padding-left: 1.9rem;
   }
 
-/* ------------------------hutkm--------------------------- */
-    .content-flex-hutkm {
+  /* ------------------------hutkm--------------------------- */
+  .content-flex-hutkm {
     flex-direction: column;
     align-items: center;
   }
@@ -673,14 +663,14 @@
     text-align: left;
     margin: 0 0rem;
   }
-  
+
   .text-content-hutkm ul {
     padding-left: 1.9rem; /* ⬅️ geser masuk ke kanan */
     /* margin-top: 2px;   opsional untuk jarak atas */
   }
 
-/* ------------------------infinitevol4--------------------------- */
-    .content-flex-infinitevol4 {
+  /* ------------------------infinitevol4--------------------------- */
+  .content-flex-infinitevol4 {
     flex-direction: column;
     align-items: center;
   }
@@ -690,13 +680,13 @@
     text-align: left;
     margin: 0 0rem;
   }
-  
+
   .text-content-infinitevol4 ul {
     padding-left: 1.9rem;
   }
 
-/* ------------------------maganghmif--------------------------- */
-    .content-flex-maganghmif {
+  /* ------------------------maganghmif--------------------------- */
+  .content-flex-maganghmif {
     flex-direction: column;
     align-items: center;
   }
@@ -706,13 +696,13 @@
     text-align: left;
     margin: 0 0rem;
   }
-  
+
   .text-content-maganghmif ul {
     padding-left: 1.9rem;
   }
 
-/* ------------------------stafhmif--------------------------- */
-    .content-flex-stafhmif {
+  /* ------------------------stafhmif--------------------------- */
+  .content-flex-stafhmif {
     flex-direction: column;
     align-items: center;
   }
@@ -722,7 +712,7 @@
     text-align: left;
     margin: 0 0rem;
   }
-  
+
   .text-content-stafhmif ul {
     padding-left: 1.9rem;
   }
@@ -748,35 +738,35 @@
     margin: 0 1rem;
   }
 
-/* -----------------------wp24--------------------- */
+  /* -----------------------wp24--------------------- */
   .text-content-wp24 {
     margin-top: 1rem;
     text-align: left;
     margin: 0 1rem;
   }
 
-/* -----------------------hutkm--------------------- */
+  /* -----------------------hutkm--------------------- */
   .text-content-hutkm {
     margin-top: 1rem;
     text-align: left;
     margin: 0 1rem;
   }
 
-/* -----------------------infinitevol4--------------------- */
+  /* -----------------------infinitevol4--------------------- */
   .text-content-infinitevol4 {
     margin-top: 1rem;
     text-align: left;
     margin: 0 1rem;
   }
 
-/* -----------------------maganghmif--------------------- */
+  /* -----------------------maganghmif--------------------- */
   .text-content-maganghmif {
     margin-top: 1rem;
     text-align: left;
     margin: 0 1rem;
   }
 
-/* -----------------------stafhmif--------------------- */
+  /* -----------------------stafhmif--------------------- */
   .text-content-stafhmif {
     margin-top: 1rem;
     text-align: left;

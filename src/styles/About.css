@@ -20,12 +20,7 @@
 }
 
 .about-title {
-  background: linear-gradient(
-    270deg,
-    var(--primary),
-    #49b7ea
-  );
-  
+  background: linear-gradient(270deg, var(--primary), #49b7ea);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,7 +39,7 @@
   }
 }
 
- #about p {
+#about p {
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -167,6 +162,17 @@
 }
 .skills .python:hover {
   color: rgb(224, 220, 12);
+}
+
+.skills .icon {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skills .icon.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 1000px) {

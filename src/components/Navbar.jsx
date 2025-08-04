@@ -1,6 +1,6 @@
-import '../styles/Navbar.css'
+import "../styles/Navbar.css";
 import { TfiMenu } from "react-icons/tfi";
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from "react";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
@@ -31,25 +31,37 @@ function Navbar() {
     <nav>
       <div className="wrapper">
         <div className="logo">
-          <a href="">Muhammad <span>Aldri</span> Saputra</a>
+          <a href="">
+            Muhammad <span>Aldri</span> Saputra
+          </a>
         </div>
 
-        <button
-          ref={buttonRef}
-          onClick={() => setMenuActive(!menuActive)}
-        >
+        <button ref={buttonRef} onClick={() => setMenuActive(!menuActive)}>
           <TfiMenu />
         </button>
 
-        <div
-          ref={menuRef}
-          className={`menu ${menuActive ? 'tampil' : ''}`}
-        >
+        <div ref={menuRef} className={`menu ${menuActive ? "tampil" : ""}`}>
           <ul>
-            <li><a href="#header" onClick={() => setMenuActive(false)}>Home</a></li>
-            <li><a href="#about" onClick={() => setMenuActive(false)}>Tentang</a></li>
-            <li><a href="#portofolio" onClick={() => setMenuActive(false)}>Proyek</a></li>
-            <li><a href="#exprience" onClick={() => setMenuActive(false)}>Pengalaman</a></li>
+            <li>
+              <a href="#header" onClick={() => setMenuActive(false)}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => setMenuActive(false)}>
+                Tentang
+              </a>
+            </li>
+            <li>
+              <a href="#portofolio" onClick={() => setMenuActive(false)}>
+                Proyek
+              </a>
+            </li>
+            <li>
+              <a href="#exprience" onClick={() => setMenuActive(false)}>
+                Pengalaman
+              </a>
+            </li>
           </ul>
         </div>
       </div>

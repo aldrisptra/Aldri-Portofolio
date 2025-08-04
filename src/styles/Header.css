@@ -59,7 +59,6 @@ header {
   }
 }
 
-
 .header-jumbotron > h3 {
   color: #fff;
   margin: 30px 0px 0px 0px;
@@ -136,48 +135,48 @@ header {
   .socialMedia > a > svg {
     width: 24px;
   }
-  
+
   @media only screen and (max-width: 600px) {
-  header {
-    height: auto; /* Jangan pakai 100vh di HP */
-    padding: 4rem 1rem 2rem 1rem;
-  }
+    header {
+      height: auto; /* Jangan pakai 100vh di HP */
+      padding: 4rem 1rem 2rem 1rem;
+    }
 
-  .header-jumbotron {
-    position: static;
-    padding-top: 2rem;
-  }
+    .header-jumbotron {
+      position: static;
+      padding-top: 2rem;
+    }
 
-  .header-jumbotron > img {
-    width: 150px;
-    height: 150px;
-  }
+    .header-jumbotron > img {
+      width: 150px;
+      height: 150px;
+    }
 
-  .header-jumbotron > h3 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin: 20px 0 10px 0;
-    letter-spacing: 2px;
-  }
+    .header-jumbotron > h3 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin: 20px 0 10px 0;
+      letter-spacing: 2px;
+    }
 
-  .header-jumbotron > p {
-    font-size: 0.95rem;
-    margin: 0 0 20px 0;
-  }
+    .header-jumbotron > p {
+      font-size: 0.95rem;
+      margin: 0 0 20px 0;
+    }
 
-  .socialMedia {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .socialMedia {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-  .socialMedia > a {
-    width: 50px;
-    height: 50px;
-  }
+    .socialMedia > a {
+      width: 50px;
+      height: 50px;
+    }
 
-  .socialMedia > a > svg {
-    height: 20px;
+    .socialMedia > a > svg {
+      height: 20px;
+    }
   }
-}
 }
